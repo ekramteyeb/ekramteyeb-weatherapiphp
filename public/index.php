@@ -30,7 +30,7 @@
           $weather .= "The temperature is ".(round($weatherArray['main']['temp']-273.15, 2) )."&deg;C."." Wind speed is ".($weatherArray['wind']['speed'] * 3.6)."km/hr.";
           
       }else{
-      		$errorMessage .="Please enter a valid city name. There is no weather information."; 
+      		$errorMessage .="Please enter a valid city name.There is no weather information."; 
       		
       }
     }
