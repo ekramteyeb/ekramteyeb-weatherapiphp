@@ -3,8 +3,13 @@
 
   require_once('../vendor/autoload.php');
   
-  /* $dotenv = Dotenv\Dotenv::createImmutable('../'.__DIR__);
-  $dotenv->load(); */
+  //if the app is running in localhost environment the following 2 lines of codes are needed. 
+  // when push to heroku(ie. production environmnet these lines of codes should not be used)
+  if ($_SERVER['SERVER_NAME'] === 'localhost'){
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+  }
+  //print_r($_SERVER);
 
   $weather = "";
 	$errorMessage = "";
