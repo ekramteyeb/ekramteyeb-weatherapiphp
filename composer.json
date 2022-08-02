@@ -1,0 +1,17 @@
+{
+    "name": "reemah/8-apis",
+    "autoload": {
+        "psr-4": {
+            "Reemah\\8Apis\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Teyeb",
+            "email": "hussenab@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
